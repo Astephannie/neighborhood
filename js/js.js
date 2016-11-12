@@ -17,31 +17,25 @@ var template = 	'<li class="col-md-6">' +
 
 $(document).ready(function() {
   var $placesContainer = $('#places');
-  // ubicación de New York (latitud, longitud)
+  // New York (lat, long)
   var initialLocation = new google.maps.LatLng(40.7058316, -74.2581935);
-  // radio de 10000 metros, tipos de lugares = embajadas
-  // Tipos disponibles: https://developers.google.com/places/supported_types?hl=es-419
   var request = {
     limit: 20,
     location: initialLocation,
     radius: '100000',
     types: ['embassy']
   };
-  // API de Places
+  // API Places
   var service = new google.maps.places.PlacesService($placesContainer[0]);
   service.nearbySearch(request, callback);  
 });
 
-// Callback de búsqueda de places
+// Callback search places
 function callback(results, status) {
   console.log(results);
-  // verifica que todo está OK
   if (status === google.maps.places.PlacesServiceStatus.OK) {
-    // recorre los resultados
     for (var i = 0, l = results.length; i < l; i++) {
-      // crea un li con la propiedad name del objeto que devuelve
       var $li = template.replace('::name::', results[i].name);
-      // lo agrega al HTML
       $("#places").append($li); 
     }
   }
