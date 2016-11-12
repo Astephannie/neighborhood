@@ -125,10 +125,11 @@ body {
       overflow: hidden;
       -webkit-transition: 0.5s ease;
       -moz-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      transition: 0.5s ease;
+      border: 0.5px solid white; }
       #right-side .cities li h2 {
         font-family: raleway;
-        font-size: 26px; }
+        font-size: 23px; }
       #right-side .cities li p {
         font-family: apercu; }
     #right-side .cities li:hover {
