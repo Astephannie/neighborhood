@@ -1,12 +1,3 @@
-$(".neighborhood").click(function(e){
- 	e.preventDefault();
- 	$(".initial-text").attr("style", "display:none"); 
- 	$(".change-text").attr("style", "display:block");  
-    $(".change-text").fadeIn();
-});
-
-
-
 var template = 	'<li class="col-md-6">' +
 				'<h2>::name::</h2>' + 
 				'<p>Ambassador: Vertigo</p>' + 
@@ -28,15 +19,28 @@ $(document).ready(function() {
   // API Places
   var service = new google.maps.places.PlacesService($placesContainer[0]);
   service.nearbySearch(request, callback);  
+
+  // Modal
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').focus();
+  });
+
 });
 
-// Callback search places
-function callback(results, status) {
-  console.log(results);
-  if (status === google.maps.places.PlacesServiceStatus.OK) {
-    for (var i = 0, l = results.length; i < l; i++) {
-      var $li = template.replace('::name::', results[i].name);
-      $("#places").append($li); 
+  // Callback search places
+  function callback(results, status) {
+    console.log(results);
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0, l = results.length; i < l; i++) {
+        var $li = template.replace('::name::', results[i].name);
+        $("#places").append($li); 
+      }
     }
   }
-}
+
+$(".neighborhood").click(function(e){
+  e.preventDefault();
+  $(".initial-text").attr("style", "display:none"); 
+  $(".change-text").attr("style", "display:block");  
+  $(".change-text").fadeIn();
+});
