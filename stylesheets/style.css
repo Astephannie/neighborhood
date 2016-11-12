@@ -136,4 +136,13 @@ body {
       background-color: white;
       color: #130377; }
 
+.modal-custom h4 {
+  font-family: raleway;
+  padding: 5px; }
+.modal-custom .modal-body {
+  padding: 30px 40px; }
+  .modal-custom .modal-body p {
+    font-family: apercu;
+    font-size: 15px; }
+
 /*# sourceMappingURL=style.css.map */
