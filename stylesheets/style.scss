@@ -62,7 +62,7 @@ $text-color-hover: #130377;
 		.navbar{
 			float: right;
 			& svg{
-				margin: 30px 7px 0;
+				margin: 30px 5px 0;
 			}
 			a:hover{
 				#menu{
@@ -71,8 +71,7 @@ $text-color-hover: #130377;
 						fill: $text-color;
 					}
 					& line{
-						stroke: $text-color-hover;
-						
+						stroke: $text-color-hover;						
 					}
 					& path{
 						stroke: $text-color-hover;
@@ -85,8 +84,7 @@ $text-color-hover: #130377;
 						fill: $text-color;
 					}
 					& line{
-						stroke: $text-color-hover;
-						
+						stroke: $text-color-hover;						
 					}
 					& path{
 						stroke: $text-color-hover;
@@ -99,8 +97,7 @@ $text-color-hover: #130377;
 						fill: $text-color;
 					}
 					& polyline{
-						stroke: $text-color-hover;
-						
+						stroke: $text-color-hover;						
 					}
 					& path{
 						stroke: $text-color-hover;
@@ -116,10 +113,10 @@ $text-color-hover: #130377;
 			left: 50%;
 			transform: translate(-50%, 150%);
 			padding: 10px;
-			.initial-text{
+			.initial-text, .change-text{
 				color: $text-color;
 				font-family: $font-raleway;
-				font-size: 35px;
+				font-size: 34px;
 				& a{
 					text-decoration: underline;
 					color: $text-color;

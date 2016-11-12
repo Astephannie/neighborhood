@@ -39,7 +39,7 @@ body {
     #left-side .left-header .navbar {
       float: right; }
       #left-side .left-header .navbar svg {
-        margin: 30px 7px 0; }
+        margin: 30px 5px 0; }
       #left-side .left-header .navbar a:hover #menu circle {
         stroke: #FFFFFF;
         fill: #FFFFFF; }
@@ -69,11 +69,11 @@ body {
     left: 50%;
     transform: translate(-50%, 150%);
     padding: 10px; }
-    #left-side .middle-content .text .initial-text {
+    #left-side .middle-content .text .initial-text, #left-side .middle-content .text .change-text {
       color: #FFFFFF;
       font-family: raleway;
-      font-size: 35px; }
-      #left-side .middle-content .text .initial-text a {
+      font-size: 34px; }
+      #left-side .middle-content .text .initial-text a, #left-side .middle-content .text .change-text a {
         text-decoration: underline;
         color: #FFFFFF; }
   #left-side .middle-content img {
