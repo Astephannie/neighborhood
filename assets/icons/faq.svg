@@ -1,9 +1,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="38px" height="38px" viewBox="0 0 37.895 37.895" enable-background="new 0 0 37.895 37.895" xml:space="preserve">
-<g>
+	<g>
 		<circle stroke="#FFFFFF" stroke-width="1.8947" stroke-miterlimit="10" cx="18.947" cy="18.947" r="18"></circle>
 		<path class="stroke" fill="none" stroke="#FFFFFF" stroke-width="1.8947" stroke-miterlimit="10" d="M19.083,23.538c0,0-0.027-1.991,1.746-3.355
-			l1.146-0.737c1.289-0.937,2.127-2.457,2.127-4.174c0-2.848-2.308-5.156-5.155-5.156s-5.157,2.309-5.157,5.156"></path>
+		l1.146-0.737c1.289-0.937,2.127-2.457,2.127-4.174c0-2.848-2.308-5.156-5.155-5.156s-5.157,2.309-5.157,5.156"></path>
 		<line fill="none" stroke="#FFFFFF" stroke-width="1.8947" stroke-miterlimit="10" x1="19.11" y1="25.421" x2="19.11" y2="28.45"></line>
-
-</g>
-					</svg>
+	</g>
+</svg>

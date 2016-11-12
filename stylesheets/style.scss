@@ -1,0 +1,198 @@
+html{
+	height: 100%;
+}
+body{
+	background: #130377 !important;
+}
+
+// TYPOGRAPHY
+
+@font-face {
+    font-family: 'apercu';
+    src: url('../fonts/apercu.otf');
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway.ttf');
+}
+
+$font-apercu: apercu;
+$font-raleway: raleway;
+
+// COLORS
+
+$text-color: #FFFFFF;
+$text-color-hover: #130377;
+
+// GENERAL
+
+.center{
+	text-align: center;
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.border-right{
+	border-right: 1px solid $text-color;
+}
+.border-top{
+	border-top: 1px solid $text-color;
+}
+
+
+// LEFT HAND SIDE
+
+#left-side{
+	height: 100vh;
+	overflow: hidden;
+	.left-header{
+		height: 100px;
+		overflow: hidden;
+		.brand{
+			float: left;
+			margin: 15px 0;
+			& img{
+				width: 70px;
+			}
+		}
+		.navbar{
+			float: right;
+			& svg{
+				margin: 30px 7px 0;
+			}
+			a:hover{
+				#menu{
+					& circle{
+						stroke: $text-color;
+						fill: $text-color;
+					}
+					& line{
+						stroke: $text-color-hover;
+						
+					}
+					& path{
+						stroke: $text-color-hover;
+						fill: $text-color-hover;
+					}
+				}
+				#faq{
+					& circle{
+						stroke: $text-color;
+						fill: $text-color;
+					}
+					& line{
+						stroke: $text-color-hover;
+						
+					}
+					& path{
+						stroke: $text-color-hover;
+						fill: $text-color;
+					}
+				}
+				#share{
+					& circle{
+						stroke: $text-color;
+						fill: $text-color;
+					}
+					& polyline{
+						stroke: $text-color-hover;
+						
+					}
+					& path{
+						stroke: $text-color-hover;
+						fill: $text-color-hover;
+					}
+				}
+			}
+		}
+	}
+	.middle-content{
+		.text{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 150%);
+			padding: 10px;
+			.initial-text{
+				color: $text-color;
+				font-family: $font-raleway;
+				font-size: 35px;
+				& a{
+					text-decoration: underline;
+					color: $text-color;
+				}
+			}
+		}
+		img{
+			width: 100%;
+		}
+	}
+	.h-icon{
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		& img{
+			width: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+#right-side{
+	height: 100vh;
+	padding: 0;
+	overflow: auto;
+	.right-header{
+		height: 100px;
+		overflow: hidden;
+		padding: 30px 20px;
+		position: fixed;
+		width: 48.85%;
+		background-color: #130377;
+		z-index: 3;
+		border-bottom: 1px solid $text-color;
+		& #search{
+			position: absolute;
+			height: 40px;
+			padding-left: 20px;
+			background-color: transparent;
+			border: none;
+			font-family: $font-apercu;
+		}
+	}
+	.cities{
+		list-style: none;
+		margin: 100px 0 0 0;
+		padding: 0;
+		color: $text-color;
+		& svg {
+			transform: translateX(-50%);
+			bottom: -40px;
+			stroke: white;
+		}
+		li{
+			padding-top: 20px;
+			height: 300px;
+			overflow: hidden;
+			-webkit-transition: 0.5s ease;
+			-moz-transition: 0.5s ease;
+			transition: 0.5s ease;
+			h2{
+				font-family: $font-raleway;
+				font-size: 26px;
+			}
+			p{
+				font-family: $font-apercu;
+			}
+		}
+		li:hover{
+			stroke: $text-color-hover;
+			background-color: white;
+			color: $text-color-hover;
+		}
+	}
+}
