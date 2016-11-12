@@ -163,6 +163,9 @@ $text-color-hover: #130377;
 			color: white;
 			font-size: 17px;
 		}
+		& #search:focus {
+			outline: none;
+		}
 	}
 	.cities{
 		list-style: none;
